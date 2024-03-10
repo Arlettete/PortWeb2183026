@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="patito.jpg" type="image/png">
+
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Practica1P1-183046</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              PRACTICA 1: Formulario de usuario 👤
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">INICIO</a>
+                <a href="Parcial1-183046.html">PARCIAL 1</a>
+                <a href="Parcial2-183046.html">PARCIAL 2</a>
+                <a href="#">PARCIAL 3</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container d-flex justify-content-lg-start">
+        <h2>
+          Definición del problema
+        </h2>
+      </div>
+      
+      <p style="background-color: #6f42c1;">
+        <strong>
+          Formulario de usuario con HTML y PHP.
+      </strong>
+    </p>
+
+  </div>
+  <div class="heading_container d-flex justify-content-lg-start">
+    <h2>
+      
+    </h2>
+  </div>
+  
+  <div style="text-align: center;">
+    <form method="post" action="form.php">
+        <fieldset style="background-color: #8c68d1;">
+        
+        
+        <legend style="background-color:#6f42c1;">Informacion general</legend>
+        
+        <table>
+        <tr>
+        
+        <th align="left" width="25%"><label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" maxlength="25" /></th>
+        
+        <th align="left" width="25%"><label for="ap">Apellido paterno:</label><br>
+        <input type="text" name="ap" id="ap" maxlength="25" /></th>
+        
+        <th align="left" width="25%"><label for="am">Apellido materno:</label><br>
+        <input type="text" name="am" id="am" maxlength="25" /></th>
+        </tr>
+        
+        <tr>
+        <th align="left" width="25%"><label for="usuario">Nombre de usuario:</label><br>
+        <input type="text" name="usuario" id="usuario" maxlength="12" placeholder="usuario" size="10" title="nombre de usuario"/></th>
+        
+        <th align="left" width="25%"><label for="password">Contraseña:</label><br>
+        <input name="pass" type="password" placeholder="password" size="15" maxlength="20"></th>
+        
+        <th align="left" width="25%"><label for="fechan">Fecha de nacimiento</label><br>
+        <input type="date" name="fechan" id="fechan" placeholder="Fecha de nacimiento" /></th>
+        
+        
+        </tr>
+        </table>
+        </fieldset>
+            
+        <br><br>
+        
+        
+        <fieldset style="background-color:#8c68d1;">
+        <legend style="background-color:#6f42c1;">Datos de facturación</legend>
+        <table>
+        <tr>
+        
+            <th align="left" width="25%"><p>Pais</p>
+                <select name="pais">
+                <optgroup label="Tipo"><br>
+                <option selected>México</option><br>
+                <option>U.S.A.</option><br>
+                <option>Canada</option><br>
+                </optgroup>
+                </select></th>
+        
+                <th align="left" width="25%"><p>Ciudad</p>
+                    <select name="pais">
+                    <optgroup label="Tipo"><br>
+                    <option selected>S.L.P.</option><br>
+                    <option>Austin</option><br>
+                    <option>Vancouver</option><br>
+                    </optgroup>
+                    </select></th>
+        
+        <th align="left" width="25%"><label for="cal">Calle</label><br>
+        <input name="cal" type="text" title="Calle" id="cal"></th>
+        </tr>
+        
+        <tr>
+        <th align="left" width="25%"><label for="nc">No. Casa</label><br>
+        <input name="nc" type="text" title="# Casa" id="nc"></th>
+        
+        <th align="left" width="25%"><label for="col">Colonia</label><br>
+        <input name="col" type="text" title="Colonia" id="col"></th>
+        
+        <th align="left" width="25%"><label for="mail">E-mail</label><br>
+        <input type="email" name="correo" id="correo" placeholder="Correo electronico"><br></th>
+        
+        
+        </tr>
+        
+        <tr>
+        <th align="left" width="25%"><label for="cp">Codigo postal</label><br>
+        <input name="cp" type="text" title="C.P." id="cp"></th>
+        
+        <th align="left" width="25%"><label for="rfc">RFC</label><br>
+        <input name="rfc" type="text" title="R.F.C." id="rfc"></th>
+        </tr>
+        
+        </table>
+        <input type="submit" name="envio" id="envio" value="Enviar formulario"></br>
+        </fieldset>
+        </form>
+        <br><br>
+                        
+        
+            </form>
+</div>
+
+
+    
+              
+            
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding-top">
+    <div class="info_logo-box">
+      <h2>
+        WEB II
+      </h2>
+    </div>
+    <div class="container layout_padding2">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>
+            UPSLP
+          </h5>
+          <p>
+            Universidad Politécnica de San Luis Potosí
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Dirección
+          </h5>
+
+              <p>
+                C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.
+              </p>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Contacto
+          </h5>
+          <p>
+            Teléfono: (444) 870 – 21 – 00 <br>
+          </p>
+        </div>
+        <div class="col-md-3">
+
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="social_container">
+
+        <div class="social-box">
+          <a href="https://www.facebook.com/upslp/?locale=es_LA">
+            <img src="images/fb.png" alt="">
+          </a>
+
+          <a href="https://twitter.com/UPSLP_MX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="images/twitter.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/upslp_oficial/?ref=xgx7shkjdh&hl=bg">
+            <img src="images/instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Arlette Maricela Rodríguez Flores
+      
+    </p>
+  </section>
+
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>
